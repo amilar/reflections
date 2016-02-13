@@ -26,8 +26,17 @@ while the main branch can still be updated if needed.
 
 How do the diagrams help you visualize the branch structure?
 
+By showing the parent of each node, and which nodes are reacable in each branch.
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+All changes from the two branches are combined. The new branch node points to
+both branches as parents.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatic merging is much more convenient, but may not always be able to
+include/exclude the right changes, especially if the same section has been
+changed by more than one individual or branch.
